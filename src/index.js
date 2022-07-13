@@ -7,7 +7,7 @@ const convertCsvToJson = () => {
   const destinationPath = 'src/csv/nodejs-hw1-ex1.txt';
   
   const source = createReadStream(sourcePath);
-  const destination = createWriteStream(destinationPath, 'utf8');
+  const destination = createWriteStream(destinationPath);
 
   const parserParameters = {
     headers: ['book', 'author', 'amount', 'price'],
