@@ -32,7 +32,7 @@ const convertCsvToJson = () => {
         console.log('File was successfuly converted!');
       }
     }
-  )
+  );
 };
 
 convertCsvToJson();
