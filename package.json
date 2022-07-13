@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-st-22-node",
+  "version": "1.0.0",
+  "description": "nodejs fundamentals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/personagrata9/nodejs-st-22-node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "nodemon"
+  ],
+  "author": "personagrata9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/personagrata9/nodejs-st-22-node/issues"
+  },
+  "homepage": "https://github.com/personagrata9/nodejs-st-22-node#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
