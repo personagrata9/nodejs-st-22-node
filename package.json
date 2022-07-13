@@ -2,9 +2,9 @@
   "name": "nodejs-st-22-node",
   "version": "1.0.0",
   "description": "nodejs fundamentals",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "task2": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/personagrata9/nodejs-st-22-node#readme",
   "devDependencies": {
+    "csvtojson": "^2.0.10",
     "nodemon": "^2.0.19"
   }
 }
