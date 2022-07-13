@@ -4,7 +4,7 @@ const { pipeline } = require('stream');
 
 const convertCsvToJson = () => {
   const sourcePath = 'src/csv/nodejs-hw1-ex1.csv';
-  const destinationPath = 'src/txt/nodejs-hw1-ex1.txt';
+  const destinationPath = 'src/nodejs-hw1-ex1.txt';
   
   const source = createReadStream(sourcePath);
   const destination = createWriteStream(destinationPath);
