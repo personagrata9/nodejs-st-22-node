@@ -1,6 +1,6 @@
-const { createReadStream, createWriteStream } = require('fs');
-const csv = require('csvtojson');
-const { pipeline } = require('stream');
+import { createReadStream, createWriteStream } from 'fs';
+import csv from 'csvtojson';
+import { pipeline } from 'stream';
 
 const convertCsvToJson = () => {
   const sourcePath = 'src/csv/nodejs-hw1-ex1.csv';
@@ -35,6 +35,4 @@ const convertCsvToJson = () => {
   );
 };
 
-module.exports = {
-  convertCsvToJson,
-};
+export default convertCsvToJson();
