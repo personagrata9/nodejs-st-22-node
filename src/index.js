@@ -1,6 +1,6 @@
 const { Transform, pipeline } = require('stream');
 
-const transform = async () => {
+const transform = () => {
   console.log(`Enter text to transform or press ctrl + c to exit`);
   
   const transformStream = new Transform({
@@ -20,8 +20,10 @@ const transform = async () => {
     process.stdin,
     transformStream,
     process.stdout,
-    (error) => console.log('Error', error.message)
-  )
+    (error) => {
+      console.error(error.message);
+    }
+  );
 };
 
 transform();
