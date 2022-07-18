@@ -1,10 +1,14 @@
 import { createReadStream, createWriteStream } from 'fs';
 import csv from 'csvtojson';
 import { pipeline } from 'stream';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 const convertCsvToJson = () => {
-  const sourcePath = 'src/csv/nodejs-hw1-ex1.csv';
-  const destinationPath = 'src/nodejs-hw1-ex1.txt';
+  const fileName = 'nodejs-hw1-ex1';
+  const sourcePath = path.join(__dirname, '..', 'csv', `${fileName}.csv`);
+  const destinationPath = path.join(__dirname, '..', `${fileName}.txt`);
   
   const source = createReadStream(sourcePath);
   const destination = createWriteStream(destinationPath);
